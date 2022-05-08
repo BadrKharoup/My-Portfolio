@@ -1,0 +1,385 @@
+/* 
+1- common styls
+2- General styls
+3- Sections styls
+    3.2-Home section 
+    3.3- About section
+    3.4- Portofolio section
+    3.5- blogs section
+4- footer
+*/
+
+/* General styls*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.clear{
+    clear: both;
+}
+.container {
+       width: 80%;
+    margin: auto;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7)   /* black cover*/
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif
+}
+button{
+    font-family: inherit;/* font of the body */
+}
+hover-opacity{
+    transition: opacity .5s;
+}
+.hover-opacity:hover{
+    opacity: .8;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    
+}
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 70px;
+    background-color: blue;
+    margin: auto;
+    
+}
+.pd-y{
+    padding: 60px 0 ;
+}
+.mg{
+    margin: 0 5%;
+}
+.ltr-effect ,
+.tp-effect
+{
+    position: relative;
+}
+.ltr-effect:after , 
+.tp-effect:after{
+    position: absolute;
+    content: "";
+    background-color: #333;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.ltr-effect:hover:after{
+    width: 100%;
+}
+.ltr-effect:after{
+    width: 0;
+    height: 100%;
+    transition: width .5s;
+}
+.tp-effect:after{
+    width: 100%;
+    height: 0;
+    transition: height .5s;
+}
+.tp-effect:hover:after{
+    height: 100%;
+}
+ul{
+    list-style: none
+}
+
+/* 3-Home section */ 
+
+/*3.1- Header */
+
+.header{
+    background-color: rgba(0,0,0,.4);
+    height: 70px;
+    position: fixed;   /*  fixed and absoulte + not blocked*/
+    width: 100%;
+    z-index: 10;  /*header above the background */
+    
+}
+.header .logo{
+    width: 50%;
+    float:left;
+}
+.header .nav{
+    width: 50%;
+    float: left;
+}
+.header .nav > li{
+    display: inline-block;
+}
+.header .nav > li > a{
+    display: block;
+    text-decoration: none;
+    padding: 30px 10px 10px 26px;
+    color: white;
+}
+.header .nav > li > a:after,
+.header .nav > li > a.active:after {
+     content: "";
+    height: 3px;
+    background-color: blue;
+    display: block;
+    transition: width .5s;   
+}
+.header .nav > li > a:after{
+    width: 0%;
+}
+.header .nav > li > a:hover:after{
+    width: 100%;
+}
+.header .nav >  li > a.active:after{
+    width: 100%;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    background-color: blue;
+    width: 150px;
+    text-align: center;
+    left: -50%;    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s , visibility .5s;
+}
+.dropdown:hover .dropdown-menu{ 
+    opacity: 1;                     /* techniq for dropdown */
+    visibility: visible;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+/* 3.2-Home section */
+
+.home{
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover;
+    position: relative
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 55%;
+}
+.home .title{
+    font-size: 3rem;
+    color: deepskyblue;
+    
+}
+.home .des{
+    color: white;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    
+}
+.home .btn{
+    width: 160px;
+    padding: 15px 0;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; 
+}
+
+.home .btn-learn{
+    color: white;
+    background-color: deepskyblue;
+    
+}
+
+/* 3.3- About section*/
+
+
+.about{
+}
+
+.about-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+}
+.photo-item-img{
+    width: 60%;
+    display: block;
+    position: relative;
+    width: 500px;
+    left: 10%;
+    clip-path: circle();
+    cursor: pointer;
+    padding: 60px 0px;
+}
+.info{
+    width: 40%;
+    display: block;
+    position: relative;
+    float: right;
+    padding: 130px 20px;
+    line-height: 2;
+    font-size: 18px;
+   
+}
+.about-item .icon{
+    color: #6195ff;
+    margin-bottom: 10px;
+    padding: 60px 10px
+}
+.about-item-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: color .5s;
+}
+.about-item-des{
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #999;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.about-item-link{
+    text-transform: capitalize;
+    color: #6195ff;
+    text-decoration: none
+}
+.about-item:hover .about-item-title{
+    color: #fff;
+}
+
+
+/* 3.4- Portofolio section*/
+
+.Portofolio{
+    background-color: #f9f9f9;
+}
+.portofolio-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 60px;
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+.portofolio-item img{
+    width: 100%;
+}
+.portofolio-item .layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+}
+.portofolio-item:hover .layer-content{
+    opacity: 1;
+    visibility: visible;       
+}
+.layer-content .layer-info{
+    position: absolute;
+    top: 50%;
+    left:50%;                          /* hero image technice  */
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.layer-content-title{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* 3.5-Blog ppage*/
+.blog{
+    background-color: #fff;
+}
+.blog-item{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+}
+.blog-item-img img{
+    width: 100%;
+}
+.blig-info{
+    padding: 20px;
+}
+
+.blog-title{
+    font-weight: bold;
+    margin: 20px 0;
+}
+.blog-des{
+    color: #999;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.blog-link{
+    color: #6195ff;
+    text-decoration: none; 
+}
+
+/* footer section */
+.footer{
+    background-color: dimgrey;
+    text-align: center;
+}
+.footer-links{
+    margin: 20px 0;
+}
+.footer .btn{
+    width: 160px;
+    padding: 15px ;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; 
+    float: inline-end;
+}
+.footer .btn-learn{
+    color: white;
+    background-color: deepskyblue;
+    padding: px ;
+}
+
+
+
+
+    

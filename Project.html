@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <title>BI Developer</title>
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet"> 
+        <!-- css file -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- js file -->
+        <script src="js/javascript.js"></script>
+    </head>
+    
+     <body>
+        
+         <!-- header -->
+         <div class="header">
+             <div class="container">
+                     <div class="logo">
+                         <img src="images/logo-alt.webp" alt="logo image" draggable="false">
+                     </div>
+                        <ul class="nav">
+                           <li> <a href="#H"  class="active">Home</a></li>
+                           <li> <a href="#A">About</a></li>
+                           <li> <a href="#S">Services</a></li>
+                           <li class="dropdown"> <a href="#P">Portofolio</a><ul class="dropdown-menu">
+                            <li><a href="https://github.com/BadrKharoup">GitHub</a></li>
+                            </ul>
+                            </li>
+                           <li class="dropdown">
+                               <a href="#B">Blogs</a>
+                               <ul class="dropdown-menu">
+                                   <li><a href="https://www.linkedin.com/in/badr-mohamed-b7b4a4186/recent-activity/shares/">Linked-in posts</a></li>
+                               </ul>
+                            
+                            </li>
+                           <li> <a href="#M">My CV</a></li>
+                         </ul>
+                     <div class="clear"></div>
+                 </div>
+            </div>
+         
+         
+         <!-- Home section -->
+         <a id='H'></a>
+         <div class="Home">
+             <div class="overlay">
+                     <div class="home-content">
+                         <h1 class="title">Business Intelligence Development</h1>
+                         <p class="des" id="BI"> Business intelligence and analytics are now two of the most important factors in ensuring your company's success. If you're looking for someone to help you make the right decision about your business , you've come to the right place.</p>
+                         <button  onclick="biinfo()" class="btn btn-learn hover-opacity">Learn more</button>
+                     </div>
+             </div> 
+         </div>
+         
+           
+         <!-- Section Header in general -->
+         
+         <div class="section-header">
+             <h2 class="section-title">About Me</h2>
+             <span class="line"></span>
+         </div>
+         
+         <!-- About section -->
+         <a id='A'></a>
+         <div class="about pd-y" >
+             <div class="container" >
+                 <div class="about-content">
+                    <p class="info"> Hello! <b> My name is Badr Mohamed.</b><br><br>I'm a business developer with extensive experience working with data,
+                        so I can provide you with a comprehensive data analysis as well as dashboards
+                         to assist you in reaching useful insights that will help you make the right decision.
+                          <br><br><b>I can provide you with the three services listed below.</b>
+                         </p>
+                    <div class="photo-item">
+                        <div class="photo-item-img">
+                            <img src="images/about/about.webp" alt="Badr photo"  draggable="false">
+                        </div>
+                    </div>
+                    <br><br>
+                    <a id='S'></a>
+                     <div class="about-item ltr-effect">
+                         <i class="fa fa-cogs fa-2x icon"></i>
+                         <h2 class="about-item-title"> BI Developer</h2>
+                         <p class="about-item-des">
+                            Accountable for assisting business owners in understanding and accessing data & some others.
+                         </p>
+                     </div>
+                      <div class="about-item mg ltr-effect">
+                         <i class="fa fa-magic fa-2x icon"></i>
+                         <h2 class="about-item-title"> Data Analyst</h2>
+                         <p class="about-item-des">
+                            In charge of gathering, cleaning, and interpreting data sets to answer a question or solve a business problem.
+                         </p>
+                     </div>
+                      <div class="about-item ltr-effect">
+                         <i class="fa fa-mobile fa-2x icon"></i>
+                         <h2 class="about-item-title"> Database Developer</h2>
+                         <p class="about-item-des">
+                            In charge of database system design, programming, development, and implementation.
+                         </p>
+                     </div>
+                     <div class="clear"></div>
+                 </div>
+             </div>
+         </div>
+         
+         <!-- portofolio section -->
+         <a id='P'></a>
+         <div class="portofolio pd-y">
+             
+             <div class="section-header">
+             <h2 class="section-title">Featured Projects</h2>
+             <span class="line"></span>
+             </div>
+             
+            <div class="container">
+                      <div class="portofolio-content">
+                          <div class="portofolio-item">
+                              <img src="images/work/work1.webp" alt="Data analysis projects">
+                              <div class="layer-content">
+                                  <div class="layer-info">
+                                      <a onclick="projectchecker()" href="https://github.com/BadrKharoup/Investigate-Datasets--Make-a-comprehensive-Data-Analysis."><h3 class="layer-content-title"> Comperhensive Data Analysis</h3></a>
+                                      <i class="fa fa-edit fa-lg"></i>
+                                      <i class="fa fa-search fa-lg"></i>
+                                  </div>
+                              </div>
+                          </div>
+                           <div class="portofolio-item mg">
+                              <img src="images/work/work2.webp" alt="A/B Tests">
+                               <div class="layer-content">
+                                  <div class="layer-info">
+                                      <a  onclick="projectchecker()" href="https://github.com/BadrKharoup/Analyze-A-B-Test-Results"><h3 class="layer-content-title"> A/B Testing</h3></a>
+                                      <i class="fa fa-edit fa-lg"></i>
+                                      <i class="fa fa-search fa-lg"></i>
+                                  </div>
+                              </div>
+                          </div>
+                           <div class="portofolio-item">
+                              <img src="images/work/work3.webp" alt="Database Development">
+                               <div class="layer-content">
+                                  <div class="layer-info">
+                                      <a onclick="projectchecker()" href="https://github.com/BadrKharoup/Database--Conceptual-schemas"><h3 class="layer-content-title"> Database From Scratch</h3></a>
+                                      <i class="fa fa-edit fa-lg"></i>
+                                      <i class="fa fa-search fa-lg"></i>
+                                  </div>
+                              </div>
+                            </div>
+                          <div class="clear"></div>
+                      </div>
+                </div>
+            </div>
+         
+         <!-- Blog section -->
+         <a id='B'></a>
+         <div class="blog pd-y">
+            <div class="section-header">
+             <h2 class="section-title">recent Blogs</h2>
+             <span class="line"></span>
+             </div>
+             <div class="container">
+                 <div class="blog-content">
+                     <div class="blog-item">
+                                <div class="blog-item-img">
+                                <img src="images/blog/blog1.webp"> 
+                                </div>
+                                <div class="blig-info">
+                                    <h3 class="blog-title">BI Concept & Integration</h3>
+                                    <p class="blog-des">If you want to work in the Business Intelligence field, you will undoubtedly encounter some jargon, such as Integration, Reports, Dashports, DataMining, Datawarehouse, and ETL. This blog will help you understand the process of BI.
+                                    </p>
+                                    <a onclick="Blogchecker()"
+                                        href="https://www.linkedin.com/posts/badr-mohamed-b7b4a4186_data-businessintelligence-datamining-activity-6923657902603808768-q4mf?utm_source=linkedin_share&utm_medium=member_desktop_web" class="blog-link">read more</a>
+                                </div>
+                     </div>
+                     
+                      <div class="blog-item mg">
+                                <div class="blog-item-img">
+                                <img src="images/blog/blog2.webp"> 
+                                </div>
+                                <div class="blig-info">
+                                    <h3 class="blog-title">ETL Tools</h3>
+                                    <p class="blog-des">Often, any organisation exists, its data is distributed across different locations, and it exists in multiple forms. Part of it could be Excel, part of it could be a database, and it could be more than one type of database,that can be solved using ETL Tools.
+                                    </p>
+                                    <a onclick="Blogchecker()"
+                                        href="https://www.linkedin.com/posts/badr-mohamed-b7b4a4186_data-businessintelligence-datamining-activity-6924377715772915714--w4u?utm_source=linkedin_share&utm_medium=member_desktop_web" class="blog-link">read more</a>
+                                </div>
+                     </div>
+                     
+                      <div class="blog-item">
+                                <div class="blog-item-img">
+                                <img src="images/blog/blog3.webp"> 
+                                </div>
+                                <div class="blig-info">
+                                    <h3 class="blog-title">Datawarehouse</h3>
+                                    <p class="blog-des">What is the best format for storing my data in order to perform a detailed analysis? Is it better, for example, to keep all of this information on Excel sheets? Is it better to store all of this information in a database, such as SQL or Oracle?
+                                    </p>
+                                    <a onclick="Blogchecker()"
+                                        href="https://www.linkedin.com/posts/badr-mohamed-b7b4a4186_data-businessintelligence-datamining-activity-6925489413611233281-dpZa?utm_source=linkedin_share&utm_medium=member_desktop_web" class="blog-link">read more</a>
+                                </div>
+                     </div>
+                     
+                     <div class="clear"></div>
+                 </div>
+             </div>
+         </div>
+
+         <!-- footer section -->
+         <a id='M'></a>
+         <div class="footer pd-y">
+             <img src="images/logo-alt.webp">
+             <br>
+             <a href="https://drive.google.com/file/d/1YSkN7y-08BKiI3-FyH3su_jF6ryo9j3a/view?usp=sharing"><button class="btn btn-learn hover-opacity">Download CV</button></a>
+         </div>
+         
+    </body>
+
+</html>
